@@ -16,6 +16,6 @@ class ContactDatabaseSeeder extends Seeder
     {
         Model::unguard();
 
-        $this->call(DemoEntriesSeederTableSeeder::class);
+        // $this->call("OthersTableSeeder");
     }
 }

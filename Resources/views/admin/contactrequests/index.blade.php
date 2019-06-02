@@ -1,9 +1,9 @@
 @extends('layouts.master')
 
 @section('content-header')
-    <h1>
-        {{ trans('contact::contactrequests.title.contactrequests') }}
-    </h1>
+    <h4>
+        {{ _ths('contact requests') }}
+    </h4>
     <ol class="breadcrumb">
         <li><a href="{{ route('dashboard.index') }}"><i class="fa fa-dashboard"></i> {{ trans('core::core.breadcrumb.home') }}</a></li>
         <li class="active">{{ trans('contact::contactrequests.title.contactrequests') }}</li>
@@ -12,12 +12,8 @@
 
 @section('content')
     <div class="row">
-        <div class="col-xs-12">
-            <div class="box box-primary">
-                <div class="box-header">
-                </div>
-                <!-- /.box-header -->
-                <div class="box-body">
+        <div class="col-xs-12 col-md-12 col-xs-12 col-lg-12 col-sm-12">
+
                     <div class="table-responsive">
                         <table class="data-table table table-bordered table-hover">
                             <thead>
@@ -81,13 +77,8 @@
                     </div>
                 </div>
                 <!-- /.box -->
-            </div>
-        </div>
-    </div>
-    @include('core::partials.delete-modal')
-@stop
 
-@section('scripts')
+    </div>
     <?php $locale = locale(); ?>
     <script type="text/javascript">
         $(function () {
@@ -105,4 +96,9 @@
             });
         });
     </script>
+    @include('core::partials.delete-modal')
+@stop
+
+@section('scripts')
+
 @stop

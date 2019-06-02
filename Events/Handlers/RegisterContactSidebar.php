@@ -16,7 +16,7 @@ class RegisterContactSidebar extends AbstractAdminSidebar
      */
     public function extendWith(Menu $menu)
     {
-        $menu->group(trans('core::sidebar.content'), function (Group $group) {
+        $menu->group(_ths('frontend'), function (Group $group) {
             $group->item('Contact requests', function (Item $item) {
                 $item->icon('fa fa-envelope-o');
                 $item->weight(config('asgard.contact.config.sidebar-position', 15));

@@ -13,7 +13,7 @@
 
 @section('content')
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-xs-12 col-md-12 col-xs-12 col-lg-12 col-sm-12">
             <div class="box box-primary">
                 <div class="box-header with-border">
                     <h3 class="box-title">{{ trans('contact::contactrequests.request information') }}</h3>
@@ -29,7 +29,7 @@
                         <dt>{{ trans('contact::contact.phone') }}</dt>
                         <dd>{{ $request->phone }}</dd>
                         <dt>{{ trans('contact::contact.message') }}</dt>
-                        <dd>{!! nl2br(e($request->message)) !!}</dd>
+                        <dd>{!! nl2br($request->message) !!}</dd>
                     </dl>
                 </div>
             </div>

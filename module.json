@@ -5,15 +5,13 @@
     "keywords": [],
     "active": 1,
     "order": 1,
-    "version": "3.1",
     "providers": [
         "Modules\\Contact\\Providers\\ContactServiceProvider",
-        "Modules\\Contact\\Providers\\RouteServiceProvider",
-        "Modules\\Contact\\Providers\\EventServiceProvider"
+        "Modules\\Contact\\Providers\\RouteServiceProvider"
     ],
     "aliases": {},
     "files": [
-
+        
     ],
     "requires": []
 }
